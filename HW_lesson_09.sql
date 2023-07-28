@@ -196,7 +196,6 @@ FROM(
     (SELECT 0 dummy UNION ALL SELECT 0 UNION ALL SELECT 0)b,
     (SELECT @I := 1, @J := 1)IJ
 )T,
-  /*Фиктивная таблица, для вывода последовательности в 1 столбец*/
   (SELECT 1 X UNION ALL SELECT 2)X LIMIT 1 OFFSET 6;
 
 
